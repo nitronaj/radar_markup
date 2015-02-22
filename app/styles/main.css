@@ -7,8 +7,8 @@
 
 /* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 0;
+  font-size: 16px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -32,42 +32,415 @@ body {
   padding-bottom: 19px;
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+.no-gutter-left{
+    padding-left: 0;
+}
+.no-gutter-right{
+    padding-right: 0;
 }
 
-.container-narrow > hr {
-  margin: 30px 0;
+.no-gutter{
+    padding-left: 0;
+    padding-right: 0;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+.btn{
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+    background: transparent;
+    line-height: 2em;
 }
 
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
+
+/* ============================================ *
+ * HEADER
+ * ============================================ */
+
+body .header{
+    margin: 0;
+    border-bottom: none;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
+.header .navbar{
+    border: none;
+    border-top: 3px solid #f49500;
+    border-radius: 0;
+    padding: 10px 20px;
 }
 
-.marketing p + h4 {
-  margin-top: 28px;
+.header .navbar{
+    text-transform: uppercase;
 }
+
+.header .navbar ul{
+    margin-right: 20px;
+}
+
+.header .navbar .btn{
+    color: #ffffff;
+    margin-top: 2px;
+}
+
+/* ============================================ *
+ * Row styles
+ * ============================================ */
+
+
+.head-content{
+    margin-bottom: 80px;
+}
+
+.head-content hr{
+    width: 90px;
+    border-top: 3px solid #f49500;
+    margin: 112px auto 30px;
+}
+
+.head-content h1{
+    margin-bottom: 28px;
+}
+
+.head-content h4{
+    color: #f49500;
+    margin-bottom: 24px;
+}
+
+.head-content p{
+    color: #838383;
+    line-height: 30px;
+    font-size: 22px;
+    margin: 0 202px;
+}
+
+.row.content{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* ============================================ *
+ * Price-container styles
+ * ============================================ */
+
+.price-container{
+    padding: 0 27px 56px;
+}
+
+
+.price-container .price-wrapper{
+    padding: 0 25px;
+}
+
+.box-wrapper{
+    width: 345px;
+    float: left;
+}
+
+.box-wrapper:first-child{
+    margin-right: 20px;
+}
+
+.box-wrapper:last-child{
+    margin-left: 20px;
+}
+
+
+
+
+.box-wrapper .box{
+    background-color: #c0c0c0;
+    padding: 90px 75px 60px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+
+.box-wrapper .box h5{
+    line-height: 17px;
+    margin: 0 0 45px;
+    letter-spacing: 2px;
+}
+
+.box-wrapper .box ul{
+    list-style: none;
+    display: inline-table;
+    padding: 0;
+}
+
+.box-wrapper .box ul li{
+    display: table-cell;
+}
+
+.box-wrapper .box ul li.currency-type{
+    vertical-align: top;
+    padding-top: 6px;
+}
+
+.box-wrapper .box ul li.price{
+    font-size: 6.25em;
+    line-height: 82px;
+    padding: 0 10px;
+}
+
+.box-wrapper .box ul li.duration{
+    vertical-align: bottom;
+    font-size: 0.82em;
+
+}
+
+.box-wrapper .box .btn{
+    margin-top: 40px;
+    width: 100%;
+}
+
+.box-wrapper .plan-list{
+    list-style: none;
+    padding: 40px 50px;
+    border: 1px solid #e5e5e5;
+    border-top: none;
+    color: #c0c0c0;
+    font-size: 1.125em;
+}
+
+.box-wrapper .plan-list li{
+    height: 55px;
+    line-height: 55px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-wrapper .plan-list li:last-child{
+    border-bottom: none;
+}
+
+.box-wrapper .plan-list i{
+    margin-right: 27px;
+    width: 18px;
+    text-align: center;
+}
+
+.box-wrapper .plan-list span{
+    color: #000000;
+}
+
+/* ============================================ *
+ * Price-container special plan
+ * ============================================ */
+
+.box-wrapper.special-plan{
+    width: 400px;
+    margin: -27px 10px 0;
+}
+
+.box-wrapper.special-plan .box{
+    background-color: #f49500;
+    padding: 105px 90px 70px;
+
+}
+
+.box-wrapper.special-plan .box h5{
+    font-size: 1.125em;
+    margin-bottom: 57px;
+}
+
+
+.box-wrapper.special-plan .box ul li.currency-type{
+    font-size: 1.75em;
+    padding-top: 0;
+}
+
+.box-wrapper.special-plan .box ul li.price{
+    font-size: 7.25em;
+    line-height: 88px;
+}
+
+.box-wrapper.special-plan .box ul li.duration{
+    font-size: 1em;
+}
+.box-wrapper.special-plan .box .btn{
+    margin-top: 50px;
+}
+
+/* ============================================ *
+ * start-container
+ * ============================================ */
+.start-container{
+    background-color: #f49500;
+    padding: 53px 0 43px;
+    color: #ffffff;
+}
+
+.start-container .content{
+    text-align: center;
+}
+
+.start-container span.text{
+    font-size: 1.875em;
+    margin-right: 60px;
+}
+
+.start-container .btn{
+    font-size: 1.125em;
+    line-height: 2.375em;
+    padding: 10px 22px;
+    border-radius: 15px;
+    margin-top: -5px;
+}
+
+/* ============================================ *
+ * faq-container
+ * ============================================ */
+.faq-wrapper{
+    margin: 0 48px 92px;
+}
+
+.faq-wrapper .col-left{
+    padding-right: 70px;
+}
+.faq-wrapper .col-right {
+    padding-left: 70px;
+}
+
+.faq-wrapper ul{
+    list-style: none;
+    padding: 0;
+}
+
+.faq-wrapper ul li{
+
+}
+
+.faq-wrapper ul li.question{
+    margin-bottom: 30px;
+}
+
+.faq-wrapper ul li.question span{
+    padding-left: 40px;
+    display: block;
+}
+.faq-wrapper ul li.question i{
+    color: #f49500;
+    float: left;
+    display: block;
+}
+
+.faq-wrapper ul li.answer{
+    color: #838383;
+    margin-bottom: 75px;
+    margin-left: 40px;
+}
+
+.faq-wrapper .btn-container{
+    text-align: center;
+}
+
+.faq-wrapper .btn{
+    background-color: #f49500;
+    border: none;
+    color: #FFF;
+    padding: 6px 40px;
+}
+
+
+/* ============================================ *
+ * social-links
+ * ============================================ */
+
+.social-links{
+    background: #f49500;
+    padding: 20px 0;
+}
+
+.social-links .content span{
+    display: inline-block;
+    color: #ffffff;
+    float: left;
+}
+
+.social-links .content .addthis_sharing_toolbox{
+    float: left;
+    margin-left: 5px;
+}
+
+
+/* ============================================ *
+ * Footer links
+ * ============================================ */
+
+.footer-links {
+    background: #000;
+    color: #7f8c8d;
+    line-height: 1.75em;
+    padding: 90px 0;
+}
+
+.footer-links a{
+    color: #7f8c8d;
+}
+
+.footer-links .content ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links .content .copyright{
+    font-size: 0.69em;
+    line-height: 1.1em;
+    margin-top: 15px;
+}
+
+/* ============================================ *
+ * footer-social-links-container
+ * ============================================ */
+.footer-social-links-container{
+    margin-bottom: 80px;
+}
+
+.footer-social-links-container .text{
+    text-align: center;
+    position: relative;
+    font-size: 1.25em;
+    padding: 45px 0;
+    color: #838383;
+}
+
+.footer-social-links-container .footer-social-links{
+    position: absolute;
+    top: 45px;
+    right: 0;
+}
+
+.footer-social-links-container .footer-social-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-social-links-container .footer-social-links ul li{
+    float: left;
+    margin: 0 0 0 20px;
+}
+
+.footer-social-links-container .footer-social-links ul li i{
+    border-radius: 15px;
+    border: 1px solid #dfdfdf;
+    padding: 5px;
+}
+
+
+.footer-social-links-container hr{
+    border: none;
+    border-top: 3px solid #f49500;
+    margin: 0 0 10px;
+}
+
+#site-done-by{
+    color: #7f8c8d;
+    font-size: 0.89em;
+}
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  .container {
-    /*max-width: 730px;*/
-  }
 
   /* Remove the padding we set earlier */
   .header,

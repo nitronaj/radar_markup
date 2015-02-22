@@ -1,6 +1,6 @@
 <!doctype html>
 <html class="no-js">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>markup</title>
     <meta name="description" content="">
@@ -10,6 +10,7 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -19,92 +20,350 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 
-  </head>
-  <body>
-    <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+</head>
+<body>
+<!--[if lt IE 10]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
 
 
-    <div class="container">
-      <div class="header">
 
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        	<ul class="nav navbar-nav pull-right">
-        		<li class="active">
-        			<a href="#">Home</a>
-        		</li>
-        		<li>
-        			<a href="#">Link</a>
-        		</li>
-        	</ul>
-            <h3 class="text-muted">markup</h3>
+    <div class="header">
+
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="btn pull-right">
+                FREE TRIAL
+            </div>
+            <ul class="nav navbar-nav pull-right">
+                <li class="">
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">TOUR</a>
+                </li>
+                <li>
+                    <a href="#">Pricing</a>
+                </li>
+            </ul>
+
         </nav>
 
-      </div>
+    </div>
 
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
-      </div>
+    <!------------- price-container ------------->
+    <div class="container-fluid price-container">
 
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+        <div class="row content">
+
+            <div class="col-md-12 no-gutter">
+                <div class="head-content text-center">
+                    <hr>
+                    <h1>With the perfect price for every pocket</h1>
+                    <h4>OUR PLANS HAVE YOU COVERED</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
+                </div>
+            </div>
+
+            <div class="col-md-12 no-gutter price-wrapper">
+
+                <div class="box-wrapper ">
+                    <div class="box">
+                        <h5>Free Plan</h5>
+                        <ul>
+                            <li class='currency-type'>$</li>
+                            <li class="price">0</li>
+                            <li class="duration">/Mo</li>
+                        </ul>
+                        <div class="clearfix"></div>
+                        <button class="btn">
+                            SIGN UP NOW
+                        </button>
+                    </div>
+                    <ul class="plan-list">
+                        <li><i class="fa fa fa-diamond"></i>10,000 messages</li>
+                        <li><i class="fa fa-microphone"></i><span>unlimited</span> date</li>
+                        <li><i class="fa fa-user"></i><span>unlimited</span> users</li>
+                        <li><i class="fa fa-connectdevelop"></i>first 10 day free</li>
+                    </ul>
+
+                </div>
+
+
+                <div class="box-wrapper special-plan">
+                    <div class="box">
+                        <h5>Free Plan</h5>
+                        <ul>
+                            <li class='currency-type'>$</li>
+                            <li class="price">0</li>
+                            <li class="duration">/Mo</li>
+                        </ul>
+                        <div class="clearfix"></div>
+                        <button class="btn">
+                            SIGN UP NOW
+                        </button>
+                    </div>
+                    <ul class="plan-list">
+                        <li><i class="fa fa fa-diamond"></i>10,000 messages</li>
+                        <li><i class="fa fa-microphone"></i><span>unlimited</span> date</li>
+                        <li><i class="fa fa-user"></i><span>unlimited</span> users</li>
+                        <li><i class="fa fa-connectdevelop"></i>first 10 day free</li>
+                    </ul>
+                </div>
+
+                <div class="box-wrapper">
+                    <div class="box">
+                        <h5>Free Plan</h5>
+                        <ul>
+                            <li class='currency-type'>$</li>
+                            <li class="price">0</li>
+                            <li class="duration">/Mo</li>
+                        </ul>
+                        <div class="clearfix"></div>
+                        <button class="btn">
+                            SIGN UP NOW
+                        </button>
+                    </div>
+                    <ul class="plan-list">
+                        <li><i class="fa fa fa-diamond"></i>10,000 messages</li>
+                        <li><i class="fa fa-microphone"></i><span>unlimited</span> date</li>
+                        <li><i class="fa fa-user"></i><span>unlimited</span> users</li>
+                        <li><i class="fa fa-connectdevelop"></i>first 10 day free</li>
+                    </ul>
+
+                </div>
 
 
 
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
 
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
+            </div>
 
         </div>
-      </div>
+    </div>
+    <!--- End price-container --->
 
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
+    
+    <!------------- start-container ------------->
+    <div class="container-fluid start-container">
+        <div class="row content">
+            <span class="text">Like what you see?</span>
+            <button class="btn">START YOUR FREE TRIAL</button>
+        </div>
+    </div>
+    <!--- End start-container --->
+
+
+    <div class="container-fluid faq-container">
+        <div class="row content">
+            <div class="col-md-12 no-gutter">
+                <div class="head-content text-center">
+                    <hr>
+                    <h1>Frequently asked questions</h1>
+                    <h4>LOREM IPSUM DOLOR</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row content">
+            <div class="faq-wrapper">
+                <div class="col-md-6 no-gutter col-left pull-left">
+                    <ul>
+                        <li class="question">
+                            <i class="fa fa-weixin"></i>
+                            <span>Lorem ipsum dolor sit amet, consectetur sit ametlorem doloradipiscing loirem ipsu</span>
+                        </li>
+                        <li class="answer">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                            beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                            odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                            voluptatem. Ut enim ad minima veniam,
+                        </li>
+                        <li class="question">
+                            <i class="fa fa-weixin"></i>
+                            <span>Lorem ipsum dolor sit amet, consectetur sit ametlorem doloradipiscing loirem ipsu</span>
+                        </li>
+                        <li class="answer">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                            beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                            odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                            voluptatem. Ut enim ad minima veniam,
+                        </li>
+                        <li class="question">
+                            <i class="fa fa-weixin"></i>
+                            <span>Lorem ipsum dolor sit amet, consectetur sit ametlorem doloradipiscing loirem ipsu</span>
+                        </li>
+                        <li class="answer">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                            beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                            odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                            voluptatem. Ut enim ad minima veniam,
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 no-gutter col-right pull-right">
+                    <ul>
+                        <li class="question">
+                            <i class="fa fa-weixin"></i>
+                            <span>Lorem ipsum dolor sit amet, consectetur sit ametlorem doloradipiscing loirem ipsu</span>
+                        </li>
+                        <li class="answer">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                            beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                            odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                            voluptatem. Ut enim ad minima veniam,
+                        </li>
+                        <li class="question">
+                            <i class="fa fa-weixin"></i>
+                            <span>Lorem ipsum dolor sit amet, consectetur sit ametlorem doloradipiscing loirem ipsu</span>
+                        </li>
+                        <li class="answer">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                            beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                            odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                            voluptatem. Ut enim ad minima veniam,
+                        </li>
+                        <li class="question">
+                            <i class="fa fa-weixin"></i>
+                            <span>Lorem ipsum dolor sit amet, consectetur sit ametlorem doloradipiscing loirem ipsu</span>
+                        </li>
+                        <li class="answer">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                            beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                            odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                            voluptatem. Ut enim ad minima veniam,
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn-container">
+                    <button class="btn">
+                        See all FAQs
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid social-links">
+        <div class="row content">
+            <span>Share:</span>
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div class="addthis_sharing_toolbox"></div>
+        </div>
+
 
     </div>
 
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+    <div class="footer">
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
 
-        <!-- build:js(.) scripts/plugins.js -->
-        <script src="bower_components/bootstrap/js/affix.js"></script>
-        <script src="bower_components/bootstrap/js/alert.js"></script>
-        <script src="bower_components/bootstrap/js/dropdown.js"></script>
-        <script src="bower_components/bootstrap/js/tooltip.js"></script>
-        <script src="bower_components/bootstrap/js/modal.js"></script>
-        <script src="bower_components/bootstrap/js/transition.js"></script>
-        <script src="bower_components/bootstrap/js/button.js"></script>
-        <script src="bower_components/bootstrap/js/popover.js"></script>
-        <script src="bower_components/bootstrap/js/carousel.js"></script>
-        <script src="bower_components/bootstrap/js/scrollspy.js"></script>
-        <script src="bower_components/bootstrap/js/collapse.js"></script>
-        <script src="bower_components/bootstrap/js/tab.js"></script>
-        <!-- endbuild -->
+        <div class="container-fluid footer-links">
+            <div class="row content">
 
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+                <div class="col-md-3 no-gutter-left">
+                    <ul>
+                        <li><a href="#">Tour</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Free trial</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 no-gutter-right">
+                    <div>Powered by </div>
+                    <div class="copyright">
+                        © Copyright  Lorem 2014 (v1.0.1627.27084)
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid footer-social-links-container">
+            <div class="row content">
+
+                <div class="text">
+                    Manage your resources... anytime, anywhere.
+                    <div class="footer-social-links">
+                        <ul>
+                            <li><i class="fa fa-facebook"></i></li>
+                            <li><i class="fa fa-linkedin"></i></li>
+                            <li><i class="fa fa-twitter"></i></li>
+                            <li><i class="fa fa-youtube"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="pull-right" id="site-done-by">
+                    Site by Alt Agency
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+
+<!-- build:js(.) scripts/plugins.js -->
+<script src="bower_components/bootstrap/js/affix.js"></script>
+<script src="bower_components/bootstrap/js/alert.js"></script>
+<script src="bower_components/bootstrap/js/dropdown.js"></script>
+<script src="bower_components/bootstrap/js/tooltip.js"></script>
+<script src="bower_components/bootstrap/js/modal.js"></script>
+<script src="bower_components/bootstrap/js/transition.js"></script>
+<script src="bower_components/bootstrap/js/button.js"></script>
+<script src="bower_components/bootstrap/js/popover.js"></script>
+<script src="bower_components/bootstrap/js/carousel.js"></script>
+<script src="bower_components/bootstrap/js/scrollspy.js"></script>
+<script src="bower_components/bootstrap/js/collapse.js"></script>
+<script src="bower_components/bootstrap/js/tab.js"></script>
+<!-- endbuild -->
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51be72fa47fa64b6" async="async"></script>
+
+<!-- build:js({app,.tmp}) scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
 </body>
 </html>
