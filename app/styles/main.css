@@ -12,13 +12,17 @@ body {
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
+/* Remove the padding we set earlier */
 .header,
 .marketing,
 .footer {
-  padding-left: 15px;
-  padding-right: 15px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
+.row{
+    margin: 0;
+}
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
@@ -112,10 +116,7 @@ body .header{
     margin: 0 202px;
 }
 
-.row.content{
-    width: 1200px;
-    margin: 0 auto;
-}
+
 
 
 /* ============================================ *
@@ -421,9 +422,11 @@ body .header{
 }
 
 .footer-social-links-container .footer-social-links ul li i{
-    border-radius: 15px;
+    border-radius: 25px;
     border: 1px solid #dfdfdf;
-    padding: 5px;
+    padding: 7px 5px 4px;
+    width: 35px;
+    height: 35px;
 }
 
 
@@ -439,24 +442,75 @@ body .header{
 }
 
 
+
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+@media screen and (min-width: 1200px) {
+    .row.content{
+        width: 1200px;
+        margin: 0 auto;
+    }
 }
+
+
+@media only screen and (min-width : 1024px) and (max-width : 1200px)  {
+    .box-wrapper{
+        width: 28%;
+        font-size: 0.9em;
+    }
+
+    .box-wrapper.special-plan{
+        width: 37.5%;
+    }
+
+    .box-wrapper .plan-list li{
+        height: 45px;
+    }
+
+    .box-wrapper .plan-list i{
+        margin-right: 17px;
+    }
+
+
+
+}
+
+@media only screen and (max-width : 1023px)  {
+    .head-content p{
+        margin: 0 10%;
+    }
+    .box-wrapper{
+        width: 60%;
+        margin: 50px auto !important;
+        float: none;
+    }
+
+    .box-wrapper.special-plan{
+        width: 80%;
+    }
+
+    .faq-wrapper .col-left,
+    .faq-wrapper .col-right{
+        padding: 20px 10px;
+    }
+    .footer{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    body .header{
+        padding: 0;
+    }
+    .price-container{
+        padding: 0 0 20px;
+    }
+    .box-wrapper{
+        width: 90%;
+    }
+
+    .box-wrapper.special-plan{
+        width: 100%;
+    }
+}
+
+
