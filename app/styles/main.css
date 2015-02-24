@@ -76,13 +76,14 @@ body .header{
     text-transform: uppercase;
 }
 
-.header .navbar ul{
-    margin-right: 20px;
+.header .navbar .nav{
+    margin: 0;
 }
 
 .header .navbar .btn{
     color: #ffffff;
     margin-top: 2px;
+    margin-left: 10px;
 }
 
 /* ============================================ *
@@ -501,16 +502,105 @@ body .header{
     body .header{
         padding: 0;
     }
+
+    .header .navbar{
+        padding-bottom: 15px;
+        margin-bottom: 0    ;
+    }
+
+    .header .navbar .nav{
+        margin: 0;
+        float: none !important;
+        text-align: center;
+    }
+
+    .head-content{
+        margin-bottom: 50px;
+    }
+
+    .head-content hr{
+        margin-top: 50px;
+    }
+
+    .head-content p{
+        margin: 0 10px;
+    }
+
     .price-container{
         padding: 0 0 20px;
     }
+
+    .price-container .price-wrapper{
+        padding: 0 10px;
+    }
+
     .box-wrapper{
-        width: 90%;
+        width: 95%;
     }
 
     .box-wrapper.special-plan{
         width: 100%;
     }
+
+    .box-wrapper .plan-list i{
+        margin-right: 10px;
+    }
+
+    .box-wrapper .plan-list{
+        font-size: 1em;
+    }
+
+    .start-container{
+        text-align: center;
+    }
+
+    .start-container span.text{
+        display: block;
+        margin: 0 0 20px;
+    }
+
+    .faq-wrapper{
+        margin: 0 0 40px;
+    }
+
+    .social-links .row.content{
+        text-align: center;
+    }
+
+    .social-links .content span,
+    .social-links .content .addthis_sharing_toolbox{
+        float: none;
+        display: inline-block;
+    }
+
+    .footer-links{
+        padding: 45px 0;
+    }
+
+    .footer-links .content > div.col-md-3{
+        margin: 0 15px 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #cecece;
+    }
+    .footer-links .content > div.col-md-3:last-child{
+        border-bottom: none;
+    }
+
+    .footer-links .content > div:first-child{
+        padding-left: 15px;
+    }
+
+    .footer-social-links-container .footer-social-links{
+        overflow: hidden;
+        position: static;
+        margin: 20px auto 0;
+        width: 200px;
+    }
+
+    .footer-social-links-container .footer-social-links ul li:first-child{
+        margin: 0;
+    }
+
 }
 
 
